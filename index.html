@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArianeDuguay_TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tableau.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#acceuil">Acceuil</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#tableau">Horaire</a>
+        <a href="#article">La Sérigraphie</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#video">Vidéos</a>
+    </nav>
+
+    <div id = 'acceuil'>
+        <h1>TP2</h1>
+        <h1>LA SÉRIGRAPGIE</h1>
+        <h2>Ariane Duguay</h2>
+        <h2>582-1W1-Mise en page web</h2>
+        <h2>Technique d'intégration multimédia</h2>
+        <h2>Collège de Maisonneuve</h2>
+        <h2>Automne 2022</h2>
+    </div>
+
+    <div id = 'inscription'>
+        <form>
+			<fieldset>
+				<legend id="titreInscrip">Inscription aux ateliers</legend>
+                <fieldset class="infos">
+                    <legend>Informations</legend>
+                    <label>Prénom: <input id="prenom" type="text"></label>
+					<label>Nom: <input id="nom" type="text"></label>
+					<label>Courriel <input id='courriel' type="email"></label>
+					<label>Âge: <input type="number"></label>
+					<label>Tel.: <input type="text"></label>
+				</fieldset>
+					<fieldset>
+						<legend>Date(s) choisie(s):</legend>
+							<label><input type="checkbox">Dimanche</label>
+							<label><input type="checkbox">Lundi</label>
+							<label><input type="checkbox">Mardi</label>
+                            <label><input type="checkbox">Mercredi</label>
+							<label><input type="checkbox">Jeudi</label>
+							<label><input type="checkbox">Vendredi</label>
+                            <label><input type="checkbox">Samedi</label>
+					</fieldset>
+                <fieldset>
+                    <legend>Nombre de participants</legend>
+                        <select name="participants">
+                            <option>1</option>
+                            <option selected="">2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6 et plus</option>
+                        </select>
+                </fieldset> 
+				<fieldset>
+					<legend>Niveau des participants:</legend>
+					    <label><input type="radio"  name="vote"> Débutant</label>
+						<label><input type="radio"  name="vote"> Intermédiaire</label>
+						<label><input type="radio" name="vote"> Avancé</label>
+				</fieldset>
+                <fieldset>
+					<legend>Commentaires:</legend>
+						<textarea name="txtComment" rows="6" cols="80"> Indiquez vos questionnements ou commentaires dans cet espace.</textarea>
+				</fieldset>
+				<fieldset id="boutons">
+					<input type="reset" value="Vider">
+					<input type="submit" value="Envoyer">
+				</fieldset>
+			</fieldset>
+        </form>
+    </div>
+
+    <div id = 'tableau'>
+        <table>
+            <caption>Ateliers du 1er au 7 Janvier 2023</caption>
+            <thead>
+                <tr>
+                   <th scope="row">Heure:</th>
+                   <th scope="col">Dimanche</th>
+                   <th scope="col">Lundi</th>
+                   <th scope="col">Mardi</th>
+                   <th scope="col">Mercredi</th>
+                   <th scope="col">Jeudi</th>
+                   <th scope="col">Vendredi</th>
+                   <th scope="col">Samedi</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row">9h00</th>
+                  <td></td>
+                  <td rowspan="3" class="avance">Avancé</td>
+                  <td rowspan="3" class="intermediaire">Intermédiaire</td>
+                  <td rowspan="3" class="debutant">Débutant</td>
+                  <td></td>
+                  <td></td>
+                  <td rowspan="3" class="avance">Avancé</td>            
+               </tr>
+               <tr>
+                  <th scope="row">10h00</th>
+                  <td rowspan="2" class="intermediaire">Intermédiaire</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+               <tr>
+                <th scope="row">11h00</th>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th scope="row">12h00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>                
+               </tr>
+               <tr>
+                <th scope="row">13h00</th>
+                <td rowspan="4" class="debutant">Débutant</td>
+                <td rowspan="3" class="intermediaire">Intermédiaire</td>
+                <td rowspan="3" class="debutant">Débutant</td>
+                <td rowspan="5" class="avance">Avancé</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2" class="debutant">Débutant</td>
+             </tr>
+               <tr>
+                  <th scope="row">14h00</th>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th scope="row">15h00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+               </tr>	
+               <tr>
+                  <th scope="row">16h00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th scope="row">17h00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+               </tr>
+        <tfoot>
+               <tr>
+               <th colspan="8">!Notez que vous pourriez avoir besoin de réserver plus d'une date!</th>
+               </tr>
+        </tfoot>
+    </table>
+    </div>
+
+    <div id = 'article'>
+        <article class="principal1">
+        <section>
+        <figure id='ImgOrigines'>
+            <img src="images/origines.png" alt="">
+            <figcaption>Artisants Chine antique</figcaption>
+        </figure>
+        <h3>Les origines</h3>
+        <p>La sérigraphie est une technique d'imprimerie qui utilise des pochoirs interposés entre l'encre et le support. Les supports utilisés varis; papier, carton, textile, métal, verre, bois, etc. Son apparition date de l'ère de la Chine antique, durant la dynastie Song. À l'époque, des cheveux tissés étaient utilisés pour fabriquer la soie et une pâte à base de riz pour le pochoir. Le cadre devient ensuite fabriqué à partir d'une pièce de soie tendue sur un cadre en bois de manière uniforme.</p>
+
+        <p>Le commerce de la soie, en plein essor au 17ème siècle, permettra à la sérigraphie de faire son entrée en Europe et sera particulièrement utilisé pour l'impression textile.</p>
+            
+        <p>1910, la sérigraphie moderne prend forme grâce aux premières utilisations de l'émulsion photosensible (réagit à la lumière). Avec l'essor de l'industrie américaine, la technique se modernise, la soie est remplacée par le nylon, le rouleau qui permettait d'étaler la pâte par une racle. Les affiches publicitaires permettrons de démocratiser cette technique et la seconde guerre mondiale amènera en Europe cette modernisation.</p> 
+            
+        <p>Les années 60 marqueront un tournant majeur pour la sérigraphie qui sera propulsée sur le devant de la scène grâce à son utilisation à des fins artistiques, notamment par Andy Warhol et Roy Lichtenstein. À la fin des années 70, la sérigraphie sera partout : sur les affiches, les vêtements, les pochettes vinyles, …</p>
+            
+        <p>La sérigraphie reste aujourd'hui une technique répandue dans les arts, le textile et le graphisme.</p>
+        </section>
+        </article><!--
+    --><article class="principal2">
+        <section>   
+            <figure id = 'ImgEtapes'>
+                <img  src="images/etapes.png" alt="">
+                <figcaption>Étapes à suivre</figcaption>
+            </figure>
+            <h3>Les étapes</h3>
+            <h4>1)Émulsionner la soie</h4>
+            <p>L’émulsion photo-sensible est un liquide de remplissage ou une base sensible à la lumière. Elle permet de reporter une image sur la trame d’un cadre de sérigraphie</p>
+            <h4>2)Brûler la soie</h4>
+            <p>Disposer vos images sur la table lumineuse. Descendre le couvercle de la table lumineuse et allumer le compresseur pour retirer l’air. Une fois l’air retiré, démarrer la minuterie et la lumière pour brûler la soie.</p>
+            
+            <h4>3)Rincer la soie</h4>
+            <p>Placer la soie brûlée dans l’évier et rincer à l’eau tiède. Travailler les images à l’aide du boyau d’arrosage, jusqu’à ce que la lumière traverse bien les zones brûlées. Laisser sécher la soie mouillée</p>
+            <h4>4)Impression</h4>
+            <p>Accrocher la soie sur la table avec les serres, côté émulsionné sur la table..Placer votre support sous l’écran à l’endroit désiré. Mettre l’encre sur la soie, napper et imprimer. ***Chaque couleur = un passage différent!</p>
+        </section>
+        </article>
+    </div>
+
+    <div id = 'galerie'>
+        <figure>
+            <img src="images/img_1.png" alt="">
+            <figcaption>https://www.ateliergymnase.com/</figcaption>
+        </figure>
+        <figure>
+            <img src="images/img_2.png" alt="">
+            <figcaption>https://unikprintshop.com/</figcaption>
+        </figure>
+        <figure>
+            <img src="images/img_3.png" alt="">
+            <figcaption>https://unikprintshop.com/</figcaption>
+        </figure>
+        <figure>
+            <img src="images/img_4.png" alt="">
+            <figcaption>https://unikprintshop.com/</figcaption>
+        </figure>
+        <figure>
+            <img src="images/img_5.png" alt="">
+            <figcaption>https://ateliercirculaire.org/</figcaption>
+        </figure>
+        <figure>
+            <img src="images/img_6.png" alt="">
+            <figcaption>https://lecartelclothing.com/</figcaption>
+        </figure>
+    </div>
+
+    <div id = 'video'>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/43EosD2eXUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xBxjrXcUSPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HMLWhhlSFHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qFfKWkl_aq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <dl>
+            <dt>Nous joindre</dt>
+                <dd>Collège de Maisonneuve</dd>
+                <dd>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</dd>
+                <dd>Travail fait dans le cadre du cours de Mise en page web</dd>
+                <dd>Ariane Duguay 2022 Tous droits réservés &#169;</dd>
+        </dl>
+        <div id="medias">
+            <h4>Médias sociaux</h4>
+        
+                <figure id="facebook">
+                    <img src="images/facebook_32.png" alt="facebook">
+                </figure>
+                <figure id="insta">
+                    <img src="images/instagram_32.png" alt="insta">
+                </figure>
+                <figure id="youtube">
+                    <img src="images/youtube_32.png" alt="youtube">
+                </figure>
+               <p><input placeholder="Rechercher..."></p>
+        </div>
+        <dl>
+            <dt>Liens importants</dt>
+                <dd>Image 1:https://serichrom-serigraphie.com/index.php/2020/10/08/lhistoire-de-la-serigraphie/</dd>
+                <dd>Image 2:https://www.lisoni.com/Quest-ce-que-limpression-serigraphique  lien image etapes</dd>
+                <dd></dd>
+                <dd></dd>
+                <dd>Avis de confidentialité | Privacy Notice</dd>
+        </dl>
+    </footer>
+</body>

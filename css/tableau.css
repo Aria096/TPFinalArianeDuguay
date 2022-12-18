@@ -1,0 +1,89 @@
+/*
+    TP2
+    Ariane Duguay
+    582-1W1-MA gr.004
+    css du tableau
+*/ 
+
+/*Règles @*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+
+table{
+  margin: 0 auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  border : 1px solid  #414b40;
+  border-collapse: collapse;
+  width: 800px;
+  align-items: center;
+  -webkit-box-shadow: 1px -1px 50px 5px #8a9b6e;
+  box-shadow: 1px -1px 50px 5px #8a9b6e;
+}	
+
+caption{
+  background-color: #354733;
+  color: white;
+  height:50px;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+thead{
+  background-color: #B99274;
+
+}
+
+tbody{
+ background-color: #f3f3fb
+}
+
+tfoot{
+  background-color:  #354733;
+  color: white;
+  height: 50px;
+}
+
+th, td{
+  border : 2px solid   #414b40;
+}
+
+td{
+  width:13.6%;
+  background-color: #f3f3fb;
+}
+
+th[scope="row"]{
+  background-color:  #B99274;
+  color:#f3f3fb;
+  width:5%;
+  height:40px;
+}
+
+th[scope="col"]{
+  color:#f3f3fb;
+}
+
+.debutant{
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(182,214,152,0.13) 0%,rgba(182,214,152,0.14) 1%,rgba(138,155,110,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(182,214,152,0.13) 0%,rgba(182,214,152,0.14) 1%,rgba(138,155,110,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-align: center;
+  font-weight: bold;
+  color: #354733;
+}
+
+.intermediaire{
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(182,214,152,0.13) 0%,rgba(182,214,152,0.14) 1%,rgba(201,167,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(182,214,152,0.13) 0%,rgba(182,214,152,0.14) 1%,rgba(201,167,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-align: center;
+  font-weight: bold;
+  color: #354733;
+}
+
+.avance{
+  background: -webkit-radial-gradient(center, ellipse cover, #f3f3fb 0%,#cfcff9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #f3f3fb 0%,#cfcff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-align: center;
+  font-weight: bold;
+  color: #354733;
+}
