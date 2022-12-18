@@ -1,1 +1,1 @@
-<h1>ReadMe pour le TP2 : https://github.com/Aria096/TPFinalArianeDuguay.git </h1>
+<h1>ReadMe pour le TP2 : https://aria096.github.io/TPFinalArianeDuguay/</h1>
